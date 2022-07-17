@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <!-- <script defer src="index.js"></script> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+ <img src="./images/SPLITTER.png" alt="">
+<div class="white_conteiner">
+<div class="frombill_tonumberofpeopleinsert">
+  <div>
+  <label class="label_bill" for="fname">Bill</label><br>
+  <input type="number"    id="bill_input" name="fname">
+  <img class="dollar_icon" src="./images/icon-dollar.svg" alt="">
+</div>
+
+  <p class="select_tips_text">Select Tip %</p>
+  <div class="six_div_selection">
+    <button class="percent_number" >5%</button>
+    <button class="percent_number">10%</button>
+    <button class="percent_number different_button">15%</button>
+    <button class="percent_number">25%</button>
+    <button class="percent_number">50%</button>
+    <input type="number" placeholder="Custom" id="last_button" name="fname">
+  </div>
+ <div class="input_container">
+  <label class="label_bill" for="fname">Number of People</label><br>
+  <input type="number"   id="people_input" name="input">
+  <p class="error_text hidden " >Can’t be zero</p>
+  <img class="person_icon" src="./images/icon-person.svg" alt="">
+</div>
+</div>
+<div class="green_total_div">
+  <div class="Tip_Amount_div">
+    <p class="Tip_Amount_text">Tip Amount <br> <span>/person</span></p>
+    <div class="Tip_Amount_total" id="tipAmount"> </div>
+  </div>
+  <div class="Tip_Amount_div" id="total_div">
+    <p class="Tip_Amount_text">Total <br> <span>/person</span></p>
+    <div class="Tip_Amount_total" id="totalAmount"></div>
+  </div>
+  <button id="resetBtn">RESET</button>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
